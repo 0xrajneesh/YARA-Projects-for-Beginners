@@ -55,8 +55,10 @@ rule RansomwareDetection {
     condition:
         $ransom_note or $encrypt_func or $file_marker
 }
-Save the file.
+
 ```
+3. Save the file.
+   
 **Expected Output**:
 
 - A .yar file containing the advanced Yara rule.
