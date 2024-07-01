@@ -32,7 +32,6 @@ yara --version
 1. Download a few known malware samples from a reputable source such as the MalwareBazaar.
 2. Analyze these samples to identify unique strings and patterns. Tools like strings or a hex editor can be useful.
 ```bash
-Copy code
 strings malware_sample.exe
 ```
 
@@ -46,7 +45,6 @@ strings malware_sample.exe
 1. Create a new file named basic_rules.yar.
 2. Write a basic Yara rule to detect one of the identified patterns:
 ```yara
-Copy code
 rule ExampleRule {
     strings:
         $my_text_string = "malicious_string"
@@ -65,7 +63,6 @@ rule ExampleRule {
 
 1. Run Yara against a directory containing your malware samples using the rule you just created:
 ```bash
-Copy code
 yara -r basic_rules.yar /path/to/malware_samples
 ```
 2. Observe the output to see which files matched the rule.
@@ -81,7 +78,6 @@ Steps:
 
 1. Enhance your Yara rule to include multiple patterns and conditions. Update basic_rules.yar:
 ```yara
-Copy code
 rule EnhancedRule {
     strings:
         $str1 = "malicious_string1"
@@ -101,7 +97,6 @@ An updated .yar file with a more complex Yara rule.
 **Steps**:
 1. Test the enhanced rule against a larger dataset containing both benign and malicious files:
 ```bash
-Copy code
 yara -r enhanced_rules.yar /path/to/dataset
 ```
 2. Analyze the results and adjust your rules to reduce false positives and false negatives. Consider using more specific strings or adding additional conditions.
