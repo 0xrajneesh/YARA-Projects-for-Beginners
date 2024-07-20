@@ -56,7 +56,7 @@ rule ExampleRule {
    
 **Expected Output**:
 
-- A .yar file containing the basic Yara rule.
+- A `.yar file` containing the basic Yara rule.
 
 ### Exercise 3: Testing Yara Rules
 **Steps**:
